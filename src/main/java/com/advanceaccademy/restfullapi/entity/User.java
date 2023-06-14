@@ -1,13 +1,13 @@
 package com.advanceaccademy.restfullapi.entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 
+import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import java.util.Set;
 
 @NoArgsConstructor
@@ -19,7 +19,7 @@ import java.util.Set;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @NotBlank
     private String firstName;

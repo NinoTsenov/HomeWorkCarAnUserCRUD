@@ -1,9 +1,10 @@
 package com.advanceaccademy.restfullapi.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.*;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @NoArgsConstructor
 @AllArgsConstructor

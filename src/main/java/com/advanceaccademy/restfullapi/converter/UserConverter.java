@@ -22,7 +22,7 @@ public class UserConverter {
     public UserResponse toUserResponse(User user){
 
         UserResponse userResponse = new UserResponse(user.getId(), user.getFirstName(),
-                user.getFamilyName(), user.getEmail());
+                user.getFamilyName(), user.getEmail(),user.getCar());
                 return userResponse;
     }
 }

@@ -2,17 +2,17 @@ package com.advanceaccademy.restfullapi.controller;
 import com.advanceaccademy.restfullapi.dto.UserRequest;
 import com.advanceaccademy.restfullapi.dto.UserResponse;
 import com.advanceaccademy.restfullapi.service.UserService;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 
 
 @RestController
 @RequestMapping("api/v1/user")
-public class userController {
+public class UserController {
 
     @Autowired
     UserService userService;

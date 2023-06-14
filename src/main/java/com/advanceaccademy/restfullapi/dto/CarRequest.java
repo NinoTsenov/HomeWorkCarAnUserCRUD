@@ -1,7 +1,8 @@
 package com.advanceaccademy.restfullapi.dto;
 
-import jakarta.validation.constraints.NotBlank;
 import lombok.*;
+
+import javax.validation.constraints.NotBlank;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,4 +25,7 @@ public class CarRequest {
 
     @NotBlank
     private String carNumber;
+
+
+    private Long userId;
 }

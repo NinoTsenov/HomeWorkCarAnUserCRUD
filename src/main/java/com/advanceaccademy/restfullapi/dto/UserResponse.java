@@ -1,7 +1,10 @@
 package com.advanceaccademy.restfullapi.dto;
 
-import jakarta.validation.constraints.NotBlank;
+import com.advanceaccademy.restfullapi.entity.Car;
 import lombok.*;
+
+import javax.validation.constraints.NotBlank;
+import java.util.Set;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,4 +24,6 @@ public class UserResponse {
 
     @NotBlank
     private String email;
+
+    private Set<Car> cars;
 }

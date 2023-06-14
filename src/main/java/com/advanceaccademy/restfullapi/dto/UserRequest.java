@@ -1,7 +1,8 @@
 package com.advanceaccademy.restfullapi.dto;
 
-import jakarta.validation.constraints.NotBlank;
 import lombok.*;
+
+import javax.validation.constraints.NotBlank;
 
 @NoArgsConstructor
 @AllArgsConstructor
